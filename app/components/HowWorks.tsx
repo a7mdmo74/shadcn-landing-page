@@ -1,5 +1,10 @@
+import {
+  GiftIcon,
+  MapIcon,
+  MedalIcon,
+  PlaneIcon,
+} from '@/components/shared/Icons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { GiftIcon, MapIcon, MedalIcon, PlaneIcon } from 'lucide-react';
 
 interface FeatureProps {
   icon: JSX.Element;
