@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-import React from 'react';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,7 +7,6 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { MobileMenu } from './MobileMenu';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from '../modeToggle';
@@ -34,10 +31,8 @@ export const navigationItems = [
 ];
 
 const Navbar = () => {
-  const pathname = usePathname();
-
   return (
-    <nav className="sticky top-0 w-full py-2 border-b-2 shadow-lg dark:bg-[#0C0A09] z-50 backdrop-blur-2xl">
+    <nav className="sticky top-0 w-full py-3 px-4 sm:px-0 border-b-2 shadow-lg dark:bg-[#0C0A09] z-50 backdrop-blur-2xl">
       <div className="max-w-7xl mx-auto grid grid-cols-12">
         <Link
           href="/"
@@ -48,9 +43,9 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="mr-2 w-6 h-6"
           >
             <rect width="18" height="18" x="3" y="3" rx="2"></rect>
@@ -66,7 +61,6 @@ const Navbar = () => {
                 <NavigationMenuItem key={index}>
                   <Link href={item.href} legacyBehavior passHref>
                     <NavigationMenuLink
-                      active={pathname === item.href}
                       className={navigationMenuTriggerStyle()}
                     >
                       {item.name}

@@ -34,6 +34,7 @@ export function MobileMenu() {
         <div className="mt-5 flex items-center px-2 space-y-1 flex-col">
           {navigationItems.map((item, index) => (
             <Link
+              onClick={() => setOpen(false)}
               key={index}
               href={item.href}
               className={cn(
