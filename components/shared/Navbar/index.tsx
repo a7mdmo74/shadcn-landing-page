@@ -79,7 +79,8 @@ const Navbar = () => {
             </Button>
             <ModeToggle variant="ghost" />
           </div>
-          <div className="sm:hidden">
+          <div className="sm:hidden flex items-center gap-2">
+            <ModeToggle variant="ghost" />
             <MobileMenu />
           </div>
         </div>
