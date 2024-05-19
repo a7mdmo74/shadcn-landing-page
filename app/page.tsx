@@ -6,6 +6,7 @@ import {
   Features,
   Services,
   Cta,
+  Footer,
 } from './components';
 
 export default function Home() {
@@ -25,6 +26,8 @@ export default function Home() {
       <Services />
       {/* CTA */}
       <Cta />
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }
