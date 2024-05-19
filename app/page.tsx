@@ -1,9 +1,16 @@
-import Image from 'next/image';
+import { About, Hero, HowWorks, Sponsors } from './components';
 
 export default function Home() {
   return (
-    <div>
-      <h1>In the name of Allah!</h1>
-    </div>
+    <main>
+      {/* Hero */}
+      <Hero />
+      {/* Sponsors */}
+      <Sponsors />
+      {/* About */}
+      <About />
+      {/* HowItWorks */}
+      <HowWorks />
+    </main>
   );
 }
