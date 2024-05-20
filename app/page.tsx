@@ -6,7 +6,11 @@ import {
   Features,
   Services,
   Cta,
-  Footer,
+  Testimonials,
+  Team,
+  Pricing,
+  Newsletter,
+  Faq,
 } from './components';
 
 export default function Home() {
@@ -26,8 +30,16 @@ export default function Home() {
       <Services />
       {/* CTA */}
       <Cta />
-      {/* Footer */}
-      <Footer />
+      {/* testimonials */}
+      <Testimonials />
+      {/* team */}
+      <Team />
+      {/* pricing */}
+      <Pricing />
+      {/* newsletter */}
+      <Newsletter />
+      {/* faq */}
+      <Faq />
     </main>
   );
 }
